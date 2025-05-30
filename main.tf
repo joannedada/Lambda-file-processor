@@ -8,7 +8,7 @@ terraform {
 }
 
 provider "aws" {
-  region = "us-east-1" # Change if needed
+  region = "us-east-1"
 }
 
 # S3 Bucket (stores uploaded files)
