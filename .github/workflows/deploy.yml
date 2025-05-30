@@ -4,7 +4,7 @@ on:
   push:
     branches: [ dev ]
     paths:
-      - 'lambda_function.py'
+      - 'lambdafunction.py'
 
 jobs:
   deploy:
@@ -16,7 +16,7 @@ jobs:
           aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           aws-region: us-east-1
-      - run: zip lambda_function.zip lambda_function.py
+      - run: zip lambda_function.zip lambdafunction.py
       - run: |
           aws lambda update-function-code \
             --function-name s3-file-processor \
