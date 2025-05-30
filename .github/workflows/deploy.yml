@@ -2,7 +2,7 @@ name: Deploy Lambda
 
 on:
   push:
-    branches: [ main ]
+    branches: [ dev ]
     paths:
       - 'lambda_function.py'
 
